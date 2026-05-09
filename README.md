@@ -91,6 +91,12 @@ At a high level, the system follows this logic:
 The project uses the **openFDA Food Enforcement API** to retrieve recall events based on search terms and date filters.
 
 ### 2. Severity Encoding
+According to FDA Recalls are actions taken by a firm to remove a product from the market. Recalls may be conducted on a firm's own initiative, by FDA request, or by FDA order under statutory authority.
+
+**Class I recall**: a situation in which there is a reasonable probability that the use of or exposure to a violative product will cause serious adverse health consequences or death.
+**Class II recall**: a situation in which use of or exposure to a violative product may cause temporary or medically reversible adverse health consequences or where the probability of serious adverse health consequences is remote.
+**Class III recall**: a situation in which use of or exposure to a violative product is not likely to cause adverse health consequences.
+
 FDA recall classes are transformed into a weighted monthly index:
 
 **Risk Index = 3 × Class I + 2 × Class II + 1 × Class III**
